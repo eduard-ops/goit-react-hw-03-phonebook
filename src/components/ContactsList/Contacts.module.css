@@ -1,0 +1,38 @@
+.item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.list {
+  padding: 10px 10px 10px 25px;
+}
+
+.item::before {
+  width: 5px;
+  height: 5px;
+  background: black;
+  border-radius: 50%;
+  content: '';
+  display: inline-block;
+  padding-top: 2px;
+  margin-right: 12px;
+}
+.tel {
+  margin-left: 10px;
+}
+
+.button {
+  margin-left: 14px;
+  cursor: pointer;
+  padding: 5px 12px;
+  border-radius: 5px;
+  border: 1px solid rgb(33, 33, 33);
+  background-color: whitesmoke;
+}
+
+.button:hover,
+.button:focus {
+  background-color: rgb(25, 112, 233);
+}

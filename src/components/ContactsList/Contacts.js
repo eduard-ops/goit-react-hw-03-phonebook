@@ -2,8 +2,6 @@ import s from './Contacts.module.css';
 
 import PropTypes from 'prop-types';
 
-// fff
-
 export default function Contacts({ item, clickDelete }) {
   return (
     <ul className={s.list}>

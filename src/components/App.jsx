@@ -19,7 +19,7 @@ class App extends Component {
   componentDidMount() {
     const contacts = localStorage.getItem('contacts');
     const contactsParse = JSON.parse(contacts);
-    this.state.contacts && this.setState({ contacts: contactsParse });
+    this.setState({ contacts: contactsParse });
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -63,7 +63,6 @@ class App extends Component {
   showContacts() {
     const { filter, contacts } = this.state;
     const normalizedFilter = filter.toLowerCase();
-    console.log(normalizedFilter);
     const visibleContacts = contacts.filter(({ name }) =>
       name.includes(normalizedFilter)
     );
